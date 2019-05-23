@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joker</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    form {
+        font-size: 20px;
+        color: white;
+        width: 50%;
+        background-color: rgb(106, 23, 161);
+    }
+    input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+    li {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        border: 2px solid red;
+    }
+    img {
+        width: 100%;
+    }
+    .js-btn {
+        padding: 10px;
+        transition: all 1s;
+    }
+    .js-btn:hover {
+        border-radius: 25%;
+        background-color: green;
+        color: white;
+
+    }
+   
+    </style>
+
+    <form>
+        
+        <label for="author">Введите автора статьи</label>
+        <input type="text" id="author" required>
+        <label for="title">Введите название статьи</label>
+        <input type="text" id="title" required>
+        <label for="description">Введите описание статьи</label>
+        <input type="text" id="description" required>
+        <label for="url">Введите ссылку на  статью</label>
+        <input type="url" id="url" required>
+        <label for="urlImg">Введите ссылку на изображение</label>
+        <input type="url" id="urlImg" required>
+        <label for="data">Введите дату публикации статьи</label>
+        <input type="date" id="data" required>
+        <label for="data">Введите время публикации статьи</label>
+        <input type="time" id="time" required>
+        <button class="js-btn">Отправить</button>
+    </form>
+ 
+    <ul class="list"></ul>
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
